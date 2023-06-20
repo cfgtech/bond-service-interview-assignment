@@ -25,7 +25,7 @@ Implementujte endpoint, který vrátí analýzu portfolia uživatele, včetně:
 Zahrňte API dokumentaci pomocí built-in knihoven Django Rest Frameworku nebo 3rd party knihoven.
 
 ### 5. Validace
-ISIN by měl být validován pomocí veřejného API Centrálního depozitáře cenních papírů. Zde je příklad volání API s platným ISIN identifikátorem:
+ISIN by měl být validován pomocí veřejného API Centrálního depozitáře cenných papírů. Zde je příklad volání API s platným ISIN identifikátorem:
 ```
 GET https://www.cdcp.cz/isbpublicjson/api/VydaneISINy?isin=CZ0003551251
 
