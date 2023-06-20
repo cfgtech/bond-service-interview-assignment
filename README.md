@@ -1,31 +1,31 @@
 # Bond Service Interview Assignment
 
-## Objective
-Your task is to create a backend service for a corporate bond investment app using Python, Django, and Django Rest Framework. This system will allow users to manage their corporate bond investments and track performance over time.
+## Cíl
+Vaším úkolem je vytvořit backendovou službu pro investování do korporátních dluhopisů pomocí Pythnu, Djanga a Django Rest Frameworku. Tato služba umožní uživatelům spravovat své investice do korporátních dluhopisů a sledovat výkonnost svého portfolia v čase.
 
-## Features
-### 1. User Authentication
-Simple API token authentication is sufficient.
+## Fíčury
+### 1. Autentizace uživatele
+Jednoduchá autentizace pomocí API tokenu je dostatečná.
 
-### 2. Bond Management
-Users should be able to:
-- Add new bonds to their portfolio, including the issue name, issue ISIN, bond value, coupon rate, purchase date, maturity date, and frequency of interest payments.
-- Update the details of the bonds they own.
-- Delete a bond from their portfolio.
-- View a list of all the bonds they own.
+### 2. Správa dluhopisů
+Uživatelé by měli být schopni:
+- Přidat nové dluhopisy do svého portfolia, včetně názvu emise, ISIN emise, hodnoty dluhopisu, úrokové sazby, data nákupu, data splatnosti a frekvence úrokových plateb (výnosů).
+- Aktualizovat údaje o vlastněných dluhopisech.
+- Smazat dluhopis ze svého portfolia.
+- Zobrazit seznam všech dluhopisů, které vlastní.
 
-### 3. Investment Analysis
-Implement an endpoint that returns an analysis of the user's portfolio, including:
-- Average coupon rate across all bonds.
-- The bond that will mature next.
-- Total value of the portfolio.
-- Future value of portfolio
+### 3. Analýza investic
+Implementujte endpoint, který vrátí analýzu portfolia uživatele, včetně:
+- Průměrná úroková sazba všech dluhopisů.
+- Dluhopis, který bude nejbližší k splatnosti.
+- Celková hodnota portfolia.
+- Budoucí hodnota portfolia.
 
-### 4. API Documentation
-Include an API documentation using Django Rest Framework's built-in tools or a third-party package.
+### 4. Dokumentace API
+Zahrňte API dokumentaci pomocí built-in knihoven Django Rest Frameworku nebo 3rd party knihoven.
 
-### 5. Validations
-ISIN should be validated against Central Security Depository public API. Here’s the example API call with a valid ISIN identifier:
+### 5. Validace
+ISIN by měl být validován pomocí veřejného API Centrálního depozitáře cenních papírů. Zde je příklad volání API s platným ISIN identifikátorem:
 ```
 GET https://www.cdcp.cz/isbpublicjson/api/VydaneISINy?isin=CZ0003551251
 
@@ -45,16 +45,16 @@ GET https://www.cdcp.cz/isbpublicjson/api/VydaneISINy?isin=CZ0003551251
 }
 ```
 ### 6. Tests
-Write a reasonable amount of tests.
+Pokryjte backend rozumným množstvím testů.
 
-### NTH: 7. Dockerize Django backend
+### 7. NTH: Dockerizace Django backendu
 
-## We'll be looking at
-- Well-structured and clean code
-- Application of RESTfull API principles
-- Error handling
-- Testing approach
+## Co budeme hodnotit
+- Dobře strukturovaný a čistý kód
+- Použití RESTful API principů
+- Zpracování chyb
+- Přístup k testování
 
-## Submission
-Please host the code in a GitHub repository. Include a README file with instructions on how to set up and run the project.
+## Odevzdání
+Prosím, umístěte kód do GitHub repozitáře. Vložte soubor README s instrukcemi, jak nastavit a spustit projekt.
 
